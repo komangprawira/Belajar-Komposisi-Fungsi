@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Website pembelajaran interaktif materi Komposisi Fungsi untuk siswa SMA/MA.">
+<title>Ruang Fungsi | Belajar Komposisi Fungsi</title>
+<style>
+:root{--ink:#17213b;--muted:#66708a;--primary:#5146d8;--primary2:#766cf0;--lav:#efedff;--yellow:#ffd66b;--mint:#dff8ef;--paper:#f7f8ff;--white:#fff;--line:#e6e8f2;--good:#147d55;--bad:#b42338;--shadow:0 14px 35px rgba(33,38,86,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}a{color:inherit}button,input{font:inherit}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navwrap{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;letter-spacing:-.04em;font-size:1.1rem;white-space:nowrap}.brandmark{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:var(--primary);color:white;font-weight:900}.navlinks{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.navlinks a{font-size:.88rem;text-decoration:none;color:var(--muted);font-weight:700;padding:8px 10px;border-radius:10px}.navlinks a:hover,.navlinks a:focus{background:var(--lav);color:var(--primary)}.menu-toggle{display:none;border:1px solid var(--line);background:white;border-radius:10px;padding:7px 11px}.container{max-width:1100px;margin:auto;padding:0 22px}.hero{padding:66px 0 44px;background:radial-gradient(circle at 80% 10%,#e1ddff 0,transparent 27%),linear-gradient(130deg,#f8f7ff,#f2fbff)}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e6e2ff;color:var(--primary);font-size:.8rem;font-weight:800;padding:7px 12px;border-radius:999px}.hero h1{font-size:clamp(2.35rem,5vw,4.3rem);line-height:1.08;letter-spacing:-.06em;margin:18px 0}.hero h1 span{color:var(--primary)}.hero p{font-size:1.08rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:13px;padding:12px 18px;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--primary);color:white;box-shadow:0 8px 18px #5146d833}.btn-secondary{background:white;color:var(--primary);border:1px solid #dcd9ff}.btn-small{padding:8px 12px;font-size:.9rem}.hero-art{position:relative;min-height:270px;display:grid;place-items:center}.orbit{width:260px;height:260px;border:2px dashed #c7c2ff;border-radius:50%;display:grid;place-items:center;position:relative}.function-card{width:155px;height:175px;border-radius:25px;background:white;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center;align-items:center;transform:rotate(-5deg);border:1px solid #eeedff}.function-card strong{font-size:3rem;color:var(--primary);line-height:1}.function-card span{color:var(--muted);font-size:.88rem;font-weight:700}.bubble{position:absolute;border-radius:18px;padding:11px 15px;background:var(--yellow);font-weight:900;box-shadow:var(--shadow)}.bubble.one{top:20px;right:-5px;transform:rotate(6deg)}.bubble.two{bottom:24px;left:-5px;background:var(--mint);transform:rotate(-7deg)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;max-width:580px}.stat{background:#ffffffb8;border:1px solid var(--line);border-radius:15px;padding:13px 15px}.stat strong{display:block;font-size:1.15rem}.stat small{color:var(--muted)}section{padding:64px 0}.section-head{max-width:700px;margin-bottom:28px}.kicker{color:var(--primary);font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.75rem}.section-head h2{font-size:clamp(1.8rem,3vw,2.7rem);letter-spacing:-.045em;line-height:1.15;margin:7px 0 10px}.section-head p{margin:0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 4px 16px rgba(33,38,86,.03)}.card h3{margin:9px 0 7px;font-size:1.1rem}.card p{color:var(--muted);margin:0 0 16px}.iconbox{width:45px;height:45px;display:grid;place-items:center;border-radius:14px;background:var(--lav);font-size:1.4rem}.card-link{color:var(--primary);font-weight:850;text-decoration:none}.card-link:hover{text-decoration:underline}.soft{background:#f0efff}.lesson-layout{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:start}.side-index{position:sticky;top:90px;background:white;border:1px solid var(--line);border-radius:18px;padding:17px}.side-index strong{display:block;margin-bottom:9px}.side-index a{display:block;padding:7px 9px;border-radius:9px;text-decoration:none;color:var(--muted);font-size:.9rem}.side-index a:hover{background:var(--lav);color:var(--primary)}.lesson{background:white;border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,34px);margin-bottom:16px}.lesson h3{margin-top:0}.formula{background:#f5f4ff;border:1px solid #e5e2ff;border-radius:14px;padding:16px 18px;text-align:center;font-size:clamp(1.1rem,2.3vw,1.45rem);font-weight:850;color:#352bb4;margin:16px 0;overflow-wrap:anywhere}.note{border-left:4px solid var(--yellow);background:#fff9e8;padding:13px 16px;border-radius:0 12px 12px 0;color:#66501b;margin:15px 0}.steps{padding-left:22px}.steps li{padding:4px 0}.example{background:#f8fbff;border:1px solid #e3edf8;border-radius:16px;padding:18px;margin:14px 0}.example strong{color:var(--primary)}.question{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}.question p{font-weight:750;margin-top:0}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.option{background:#f8f8ff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:left;cursor:pointer;color:var(--ink)}.option:hover{border-color:var(--primary)}.option.selected{border-color:var(--primary);background:var(--lav)}.option.correct{border-color:#67c7a0;background:#e6fbf1}.option.wrong{border-color:#f09aa5;background:#fff0f1}.feedback{margin-top:12px;font-weight:750}.feedback.good{color:var(--good)}.feedback.bad{color:var(--bad)}.game-tabs{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}.game-tab{border:1px solid var(--line);background:white;border-radius:999px;padding:10px 15px;font-weight:800;cursor:pointer}.game-tab.active{background:var(--primary);color:white;border-color:var(--primary)}.game-panel{background:white;border:1px solid var(--line);border-radius:20px;padding:25px}.game-score{display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--lav);border-radius:13px;padding:11px 14px;font-weight:850;margin-bottom:18px}.match-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.match-item{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfbff;cursor:pointer;text-align:center;font-weight:750}.match-item.chosen{background:var(--lav);border-color:var(--primary)}.match-item.matched{background:#e6fbf1;border-color:#67c7a0;cursor:default}.timer{font-variant-numeric:tabular-nums;color:var(--primary)}.progress{height:9px;background:#e8e8f4;border-radius:999px;overflow:hidden;margin:14px 0}.progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--primary),#9b94ff);transition:width .3s}.result-box{background:linear-gradient(135deg,#f0efff,#effbf7);border:1px solid #e3e2ff;border-radius:20px;padding:25px;text-align:center;margin-top:20px}.result-box .big-score{font-size:3.2rem;font-weight:950;letter-spacing:-.06em;color:var(--primary)}.guide-list{counter-reset:guide;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.guide-item{background:white;border:1px solid var(--line);border-radius:17px;padding:18px;display:flex;gap:13px}.guide-num{counter-increment:guide;flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;background:var(--primary);color:white;border-radius:12px;font-weight:900}.guide-item h3{margin:0 0 4px;font-size:1rem}.guide-item p{margin:0;color:var(--muted);font-size:.94rem}.summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.summary-grid .card{box-shadow:none}.footer{background:#171d35;color:#e8e9f5;padding:35px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer p{color:#b7bdd4;margin:4px 0}.footer a{color:#d8d4ff}.small{font-size:.9rem;color:var(--muted)}.hidden{display:none!important}.notice{font-size:.9rem;color:var(--muted);margin-top:12px}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:63px;left:12px;right:12px;background:white;border:1px solid var(--line);box-shadow:var(--shadow);padding:12px;border-radius:16px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:10px 12px}.menu-toggle{display:block}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:230px}.orbit{width:220px;height:220px}.function-card{width:135px;height:150px}.lesson-layout{grid-template-columns:1fr}.side-index{position:static}.side-index nav{display:grid;grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.container{padding:0 16px}.navwrap{padding:10px 16px}.hero{padding:42px 0 30px}.hero-art{min-height:210px}.stats{gap:7px}.stat{padding:10px}.stat small{font-size:.75rem}.cards,.guide-list,.summary-grid{grid-template-columns:1fr}.options{grid-template-columns:1fr}.match-grid{grid-template-columns:1fr}.lesson{padding:20px}.section-head h2{font-size:2rem}section{padding:48px 0}}
+@media print{.topbar,.actions,.game-tabs,.btn,.footer{display:none!important}body{background:white}.hero{padding:20px 0}section{padding:20px 0}.card,.lesson,.question{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="navwrap">
+    <a class="brand" href="#beranda" aria-label="Ruang Fungsi, beranda"><span class="brandmark">ƒx</span> Ruang Fungsi</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">☰ Menu</button>
+    <nav class="navlinks" id="navlinks" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a><a href="#materi">Materi</a><a href="#contoh-soal">Contoh Soal</a><a href="#mini-games">Mini Games</a><a href="#tes-akhir">Tes Akhir</a><a href="#petunjuk">Petunjuk</a><a href="#ringkasan">Ringkasan</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="beranda">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">✦ MATEMATIKA SMA/MA · KELAS XI</span>
+   <h1>Komposisi Fungsi,<br><span>jadi lebih mudah.</span></h1>
+   <p>Jelajahi cara kerja fungsi, pelajari langkah komposisi, latih kemampuan melalui permainan, lalu buktikan pemahamanmu lewat tes akhir.</p>
+   <div class="actions"><a class="btn btn-primary" href="#materi">Mulai Belajar <span>→</span></a><a class="btn btn-secondary" href="#tes-akhir">Uji Kemampuan</a></div>
+   <div class="stats"><div class="stat"><strong>7 topik</strong><small>Materi inti</small></div><div class="stat"><strong>3 permainan</strong><small>Latihan interaktif</small></div><div class="stat"><strong>10 soal</strong><small>Tes akhir</small></div></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustrasi fungsi matematika"><div class="orbit"><div class="function-card"><span>MASUKAN x</span><strong>ƒ(x)</strong><span>HASIL KELUARAN</span></div><div class="bubble one">f ∘ g</div><div class="bubble two">Belajar yuk!</div></div></div>
+ </div>
+</section>
+
+<section id="jelajahi">
+ <div class="container">
+  <div class="section-head"><span class="kicker">Jelajahi website</span><h2>Belajar dengan alur yang jelas</h2><p>Pilih bagian yang ingin kamu pelajari. Setiap tombol akan membawamu ke bagian yang sesuai di website ini.</p></div>
+  <div class="cards">
+   <article class="card"><div class="iconbox">📘</div><h3>Materi Inti</h3><p>Pahami definisi, notasi, sifat, dan langkah komposisi fungsi.</p><a class="card-link" href="#materi">Pelajari materi →</a></article>
+   <article class="card"><div class="iconbox">✍️</div><h3>Contoh Soal</h3><p>Ikuti penyelesaian soal dari tahap substitusi sampai hasil akhir.</p><a class="card-link" href="#contoh-soal">Lihat pembahasan →</a></article>
+   <article class="card"><div class="iconbox">🎮</div><h3>Mini Games</h3><p>Uji kecepatan dan ketepatan melalui permainan edukatif.</p><a class="card-link" href="#mini-games">Main sekarang →</a></article>
+   <article class="card"><div class="iconbox">🧠</div><h3>Tes Akhir</h3><p>Kerjakan sepuluh soal untuk melihat hasil belajarmu.</p><a class="card-link" href="#tes-akhir">Mulai tes →</a></article>
+   <article class="card"><div class="iconbox">🧭</div><h3>Petunjuk Penggunaan</h3><p>Ikuti panduan singkat agar belajar lebih terarah.</p><a class="card-link" href="#petunjuk">Baca petunjuk →</a></article>
+   <article class="card"><div class="iconbox">📌</div><h3>Ringkasan Rumus</h3><p>Ulangi rumus penting dan hindari kesalahan yang sering terjadi.</p><a class="card-link" href="#ringkasan">Buka ringkasan →</a></article>
+  </div>
+ </div>
+</section>
+
+<section id="materi" class="soft">
+ <div class="container">
+  <div class="section-head"><span class="kicker">01 · Materi</span><h2>Kenali konsep komposisi fungsi</h2><p>Pelajari setiap topik secara berurutan. Gunakan daftar di samping untuk berpindah langsung ke submateri.</p></div>
+  <div class="lesson-layout">
+   <aside class="side-index"><strong>Daftar Materi</strong><nav><a href="#m1">1. Pengertian</a><a href="#m2">2. Notasi</a><a href="#m3">3. Langkah hitung</a><a href="#m4">4. Sifat</a><a href="#m5">5. Tiga fungsi</a><a href="#m6">6. Nilai fungsi</a><a href="#m7">7. Kontekstual</a></nav></aside>
+   <div>
+    <article class="lesson" id="m1"><h3>1. Pengertian komposisi fungsi</h3><p>Komposisi fungsi adalah operasi yang menggabungkan dua fungsi atau lebih dengan memasukkan keluaran suatu fungsi sebagai masukan fungsi berikutnya. Bayangkan sebuah proses berurutan: masukan melewati mesin pertama, lalu hasilnya diproses oleh mesin kedua.</p><div class="formula">(f ∘ g)(x) = f(g(x))</div><p>Notasi tersebut dibaca “f komposisi g dari x”. Fungsi <strong>g</strong> bekerja lebih dahulu, kemudian fungsi <strong>f</strong> memproses hasilnya.</p><div class="note"><strong>Ingat:</strong> pada (f ∘ g)(x), kerjakan fungsi yang berada paling dekat dengan x terlebih dahulu, yaitu g(x).</div><a class="btn btn-secondary btn-small" href="#m2">Lanjut ke notasi →</a></article>
+    <article class="lesson" id="m2"><h3>2. Notasi dan maknanya</h3><p>Komposisi fungsi dapat ditulis dengan simbol ∘. Jika f(x) = 2x + 1 dan g(x) = x², maka:</p><div class="formula">(f ∘ g)(x) = f(g(x)) = 2x² + 1</div><p>Sebaliknya, (g ∘ f)(x) berarti g(f(x)), sehingga hasil fungsi f dimasukkan ke fungsi g.</p><div class="formula">(g ∘ f)(x) = g(2x + 1) = (2x + 1)²</div><p>Kedua hasil tersebut berbeda. Karena itu, perhatikan urutan fungsi sebelum melakukan substitusi.</p><a class="btn btn-secondary btn-small" href="#m3">Lanjut ke langkah hitung →</a></article>
+    <article class="lesson" id="m3"><h3>3. Langkah menentukan komposisi dua fungsi</h3><ol class="steps"><li>Tulis fungsi yang diminta, misalnya (f ∘ g)(x).</li><li>Ubah notasi menjadi f(g(x)).</li><li>Ganti setiap x pada fungsi f dengan seluruh bentuk g(x).</li><li>Sederhanakan bentuk aljabar dengan teliti.</li><li>Periksa kembali tanda kurung dan operasi pangkat.</li></ol><div class="example"><strong>Contoh singkat</strong><p>f(x) = 3x − 2 dan g(x) = x + 4. Tentukan (f ∘ g)(x).</p><p>(f ∘ g)(x) = f(x + 4)</p><p>= 3(x + 4) − 2</p><p>= 3x + 12 − 2</p><p><strong>= 3x + 10</strong></p></div><a class="btn btn-secondary btn-small" href="#m4">Lanjut ke sifat →</a></article>
+    <article class="lesson" id="m4"><h3>4. Sifat-sifat komposisi fungsi</h3><p>Komposisi fungsi bersifat asosiatif apabila fungsi-fungsi terkait terdefinisi, sehingga pengelompokan dapat berubah tanpa mengubah urutan fungsi.</p><div class="formula">f ∘ (g ∘ h) = (f ∘ g) ∘ h</div><p>Namun, komposisi fungsi pada umumnya tidak komutatif. Artinya, menukar urutan fungsi biasanya menghasilkan keluaran berbeda.</p><div class="formula">f ∘ g ≠ g ∘ f  (pada umumnya)</div><div class="note">Jangan menyimpulkan bahwa kedua komposisi selalu berbeda. Pada fungsi tertentu, hasilnya bisa saja sama.</div><a class="btn btn-secondary btn-small" href="#m5">Lanjut ke tiga fungsi →</a></article>
+    <article class="lesson" id="m5"><h3>5. Komposisi tiga fungsi</h3><p>Untuk tiga fungsi, prosesnya tetap berurutan. Pada (f ∘ g ∘ h)(x), fungsi h bekerja lebih dahulu, disusul g, lalu f.</p><div class="formula">(f ∘ g ∘ h)(x) = f(g(h(x)))</div><div class="example"><strong>Contoh</strong><p>f(x) = x + 1, g(x) = 2x, dan h(x) = x². Tentukan (f ∘ g ∘ h)(x).</p><p>h(x) = x²</p><p>g(h(x)) = g(x²) = 2x²</p><p>f(g(h(x))) = f(2x²) = 2x² + 1</p><p><strong>Jadi, (f ∘ g ∘ h)(x) = 2x² + 1.</strong></p></div><a class="btn btn-secondary btn-small" href="#m6">Lanjut ke nilai fungsi →</a></article>
+    <article class="lesson" id="m6"><h3>6. Menentukan nilai komposisi fungsi</h3><p>Jika soal meminta nilai komposisi pada angka tertentu, tentukan bentuk komposisinya atau hitung bertahap dengan memasukkan nilai ke fungsi paling dalam terlebih dahulu.</p><div class="example"><strong>Contoh</strong><p>f(x) = 2x + 3 dan g(x) = x² − 1. Tentukan (f ∘ g)(2).</p><p>g(2) = 2² − 1 = 3</p><p>f(g(2)) = f(3) = 2(3) + 3 = 9</p><p><strong>Jadi, (f ∘ g)(2) = 9.</strong></p></div><a class="btn btn-secondary btn-small" href="#m7">Lanjut ke penerapan →</a></article>
+    <article class="lesson" id="m7"><h3>7. Penerapan dalam kehidupan sehari-hari</h3><p>Komposisi fungsi dapat menggambarkan proses yang berlangsung bertahap. Misalnya, sebuah toko memberikan diskon terlebih dahulu, lalu menghitung biaya tambahan berdasarkan harga setelah diskon.</p><div class="example"><strong>Ilustrasi</strong><p>Harga awal barang adalah x rupiah. Fungsi diskon 10% adalah d(x) = 0,9x. Setelah diskon, toko menambahkan biaya layanan tetap Rp5.000 dengan fungsi b(x) = x + 5.000.</p><div class="formula">(b ∘ d)(x) = b(0,9x) = 0,9x + 5.000</div><p>Model ini menunjukkan bahwa biaya akhir bergantung pada hasil proses diskon terlebih dahulu.</p></div><div class="actions"><a class="btn btn-primary btn-small" href="#contoh-soal">Latihan contoh soal →</a><a class="btn btn-secondary btn-small" href="#mini-games">Coba mini games →</a></div></article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contoh-soal">
+ <div class="container">
+  <div class="section-head"><span class="kicker">02 · Contoh soal</span><h2>Lihat prosesnya, pahami alasannya</h2><p>Gunakan pembahasan ini sebagai model untuk menyelesaikan soal serupa secara mandiri.</p></div>
+  <div class="lesson"><h3>Contoh 1 · Komposisi dua fungsi</h3><p>Diketahui f(x) = 2x + 3 dan g(x) = x² − 1. Tentukan (f ∘ g)(x).</p><ol class="steps"><li>Gunakan definisi: (f ∘ g)(x) = f(g(x)).</li><li>Substitusikan g(x) = x² − 1 ke dalam f.</li><li>f(x² − 1) = 2(x² − 1) + 3.</li><li>= 2x² − 2 + 3.</li></ol><div class="formula">(f ∘ g)(x) = 2x² + 1</div></div>
+  <div class="lesson"><h3>Contoh 2 · Urutan dibalik</h3><p>Dengan fungsi yang sama, tentukan (g ∘ f)(x).</p><ol class="steps"><li>(g ∘ f)(x) = g(f(x)).</li><li>Masukkan f(x) = 2x + 3 ke fungsi g.</li><li>g(2x + 3) = (2x + 3)² − 1.</li><li>= 4x² + 12x + 9 − 1.</li></ol><div class="formula">(g ∘ f)(x) = 4x² + 12x + 8</div><p>Perhatikan bahwa hasilnya tidak sama dengan (f ∘ g)(x). Perbedaan muncul karena urutan substitusi berubah.</p></div>
+  <div class="lesson"><h3>Contoh 3 · Menentukan nilai komposisi</h3><p>Diketahui f(x) = x − 5 dan g(x) = 3x + 2. Tentukan (f ∘ g)(4).</p><ol class="steps"><li>Hitung g(4) = 3(4) + 2 = 14.</li><li>Masukkan hasil tersebut ke f: f(14) = 14 − 5 = 9.</li></ol><div class="formula">(f ∘ g)(4) = 9</div></div>
+  <div class="lesson"><h3>Contoh 4 · Komposisi tiga fungsi</h3><p>Diketahui f(x) = x + 2, g(x) = x², dan h(x) = 2x. Tentukan (f ∘ g ∘ h)(x).</p><ol class="steps"><li>h(x) = 2x.</li><li>g(h(x)) = (2x)² = 4x².</li><li>f(4x²) = 4x² + 2.</li></ol><div class="formula">(f ∘ g ∘ h)(x) = 4x² + 2</div></div>
+  <div class="lesson"><h3>Contoh 5 · Menentukan fungsi dari konteks</h3><p>Sebuah bilangan x dikalikan 5, kemudian dikurangi 4. Jika f(x) = 5x dan g(x) = x − 4, nyatakan proses tersebut sebagai komposisi.</p><p>Perkalian terjadi lebih dahulu, sehingga prosesnya adalah g(f(x)).</p><div class="formula">(g ∘ f)(x) = g(5x) = 5x − 4</div><a class="btn btn-primary" href="#latihan-cepat">Coba latihan cepat →</a></div>
+  <div id="latihan-cepat" class="lesson"><h3>Latihan cepat</h3><p>Diketahui f(x) = x + 6 dan g(x) = 2x. Nilai (f ∘ g)(3) adalah ...</p><div class="options" id="quickOptions"><button class="option" data-correct="false">9</button><button class="option" data-correct="true">12</button><button class="option" data-correct="false">15</button><button class="option" data-correct="false">18</button></div><div id="quickFeedback" class="feedback" aria-live="polite"></div><p class="small">Petunjuk: hitung g(3) terlebih dahulu, kemudian masukkan hasilnya ke f.</p></div>
+ </div>
+</section>
+
+<section id="mini-games" class="soft">
+ <div class="container">
+  <div class="section-head"><span class="kicker">03 · Mini games</span><h2>Belajar sambil bermain</h2><p>Pilih salah satu permainan. Skor akan dihitung selama sesi bermain di halaman ini.</p></div>
+  <div class="game-tabs"><button class="game-tab active" data-game="tebak">🎯 Tebak Hasil</button><button class="game-tab" data-game="pasangkan">🧩 Pasangkan Fungsi</button><button class="game-tab" data-game="tantangan">⏱️ Tantangan</button></div>
+  <div class="game-panel" id="game-tebak"><div class="game-score"><span>Permainan 1 · Tebak Hasil</span><span>Skor: <b id="guessScore">0</b></span></div><div class="progress"><span id="guessProgress"></span></div><p id="guessCounter" class="small">Soal 1 dari 5</p><h3 id="guessQuestion">Memuat soal...</h3><div class="options" id="guessOptions"></div><div id="guessFeedback" class="feedback" aria-live="polite"></div><div class="actions"><button class="btn btn-primary btn-small" id="guessNext" disabled>Soal berikutnya →</button><button class="btn btn-secondary btn-small" id="guessRestart">Mulai ulang</button></div></div>
+  <div class="game-panel hidden" id="game-pasangkan"><div class="game-score"><span>Permainan 2 · Pasangkan Fungsi</span><span>Pasangan: <b id="matchCount">0</b>/4</span></div><p>Pilih satu kartu dari kolom kiri, lalu pilih hasil yang sesuai dari kolom kanan. Pasangan yang tepat akan berubah menjadi hijau.</p><div class="match-grid" id="matchGrid"></div><div id="matchFeedback" class="feedback" aria-live="polite"></div><div class="actions"><button class="btn btn-secondary btn-small" id="matchRestart">Acak dan ulangi</button></div></div>
+  <div class="game-panel hidden" id="game-tantangan"><div class="game-score"><span>Permainan 3 · Tantangan</span><span class="timer">Waktu: <b id="challengeTimer">60</b> dtk</span></div><p>Jawab sebanyak mungkin soal dalam 60 detik. Tekan mulai untuk memulai hitung mundur.</p><div class="progress"><span id="challengeProgress"></span></div><h3 id="challengeQuestion">Siap menguji kecepatanmu?</h3><div class="options" id="challengeOptions"></div><div id="challengeFeedback" class="feedback" aria-live="polite"></div><div class="actions"><button class="btn btn-primary btn-small" id="challengeStart">Mulai tantangan</button><button class="btn btn-secondary btn-small" id="challengeReset">Atur ulang</button></div><p>Skor tantangan: <strong id="challengeScore">0</strong></p></div>
+  <p class="notice">Catatan: permainan berjalan langsung di browser. Progres dan skor mini games tidak digunakan sebagai nilai resmi tes akhir.</p>
+ </div>
+</section>
+
+<section id="tes-akhir">
+ <div class="container">
+  <div class="section-head"><span class="kicker">04 · Final test</span><h2>Tes akhir pemahaman</h2><p>Kerjakan 10 soal berikut. Setiap jawaban benar bernilai 10 poin. Kamu dapat memilih jawaban, meninjau soal, lalu menekan tombol penilaian.</p></div>
+  <div class="lesson">
+   <div class="game-score"><span>TES AKHIR · 10 SOAL</span><span>Terjawab: <b id="answeredCount">0</b>/10</span></div>
+   <div class="progress"><span id="testProgress"></span></div>
+   <div id="testQuestions"></div>
+   <div class="actions"><button class="btn btn-primary" id="submitTest">Selesaikan Tes</button><button class="btn btn-secondary" id="resetTest">Ulangi Tes</button><button class="btn btn-secondary" id="printSummary" onclick="window.print()">Cetak halaman</button></div>
+   <p id="testWarning" class="feedback" aria-live="polite"></p>
+   <div id="testResult" class="result-box hidden" aria-live="polite"></div>
+   <div id="testReview" class="hidden"></div>
+  </div>
+ </div>
+</section>
+
+<section id="petunjuk" class="soft">
+ <div class="container">
+  <div class="section-head"><span class="kicker">05 · Petunjuk penggunaan</span><h2>Gunakan website dengan alur ini</h2><p>Ikuti langkah berikut agar pengalaman belajarmu terarah dan setiap fitur memberi manfaat.</p></div>
+  <div class="guide-list">
+   <article class="guide-item"><span class="guide-num">1</span><div><h3>Mulai dari beranda</h3><p>Baca tujuan pembelajaran dan pilih tombol “Mulai Belajar” untuk menuju materi.</p></div></article>
+   <article class="guide-item"><span class="guide-num">2</span><div><h3>Pelajari materi berurutan</h3><p>Buka daftar materi, baca rumus, dan ikuti contoh di setiap topik.</p></div></article>
+   <article class="guide-item"><span class="guide-num">3</span><div><h3>Pelajari contoh soal</h3><p>Perhatikan urutan substitusi. Coba kerjakan dahulu sebelum membaca penyelesaiannya.</p></div></article>
+   <article class="guide-item"><span class="guide-num">4</span><div><h3>Mainkan mini games</h3><p>Gunakan permainan untuk melatih ketepatan dan kecepatan tanpa tekanan nilai resmi.</p></div></article>
+   <article class="guide-item"><span class="guide-num">5</span><div><h3>Kerjakan tes akhir</h3><p>Pilih satu jawaban pada setiap soal. Pastikan semua soal terjawab sebelum penilaian.</p></div></article>
+   <article class="guide-item"><span class="guide-num">6</span><div><h3>Tinjau hasil dan ulangi</h3><p>Baca pembahasan soal yang keliru, kembali ke materi terkait, lalu ulangi tes.</p></div></article>
+  </div>
+  <div class="actions"><a class="btn btn-primary" href="#materi">Mulai dari materi →</a><a class="btn btn-secondary" href="#ringkasan">Lihat ringkasan</a></div>
+ </div>
+</section>
+
+<section id="ringkasan">
+ <div class="container">
+  <div class="section-head"><span class="kicker">06 · Ringkasan</span><h2>Rumus penting dalam satu tempat</h2><p>Gunakan bagian ini untuk mengulang konsep sebelum mengikuti tes akhir.</p></div>
+  <div class="summary-grid">
+   <article class="card"><div class="iconbox">ƒ</div><h3>Definisi utama</h3><div class="formula">(f ∘ g)(x) = f(g(x))</div><p>Fungsi g bekerja terlebih dahulu, kemudian hasilnya menjadi masukan fungsi f.</p></article>
+   <article class="card"><div class="iconbox">↔</div><h3>Urutan fungsi</h3><div class="formula">(g ∘ f)(x) = g(f(x))</div><p>Jika urutan dibalik, proses dan hasilnya dapat berubah.</p></article>
+   <article class="card"><div class="iconbox">③</div><h3>Tiga fungsi</h3><div class="formula">(f ∘ g ∘ h)(x) = f(g(h(x)))</div><p>Kerjakan dari fungsi paling dalam, yaitu h, lalu g, kemudian f.</p></article>
+   <article class="card"><div class="iconbox">✓</div><h3>Hindari kesalahan umum</h3><p>Jangan menukar urutan fungsi, jangan lupa tanda kurung saat substitusi, dan sederhanakan aljabar secara bertahap.</p></article>
+  </div>
+  <div class="actions"><a class="btn btn-primary" href="#tes-akhir">Uji pemahaman sekarang →</a><button class="btn btn-secondary" id="saveProgress">Simpan ringkasan sebagai catatan</button></div>
+  <p id="saveMessage" class="small" aria-live="polite"></p>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><strong>ƒx Ruang Fungsi</strong><p>Media belajar interaktif: Komposisi Fungsi.</p></div><div><p>Belajar · Berlatih · Evaluasi</p><p><a href="#beranda">Kembali ke atas ↑</a></p></div></div></footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const navlinks = $('navlinks');
+$('menuToggle').addEventListener('click',()=>navlinks.classList.toggle('open'));
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+
+$('quickOptions').querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{
+  $('quickOptions').querySelectorAll('.option').forEach(b=>{b.disabled=true;if(b.dataset.correct==='true')b.classList.add('correct')});
+  if(btn.dataset.correct==='true'){$('quickFeedback').textContent='Benar! g(3) = 6, lalu f(6) = 12.';$('quickFeedback').className='feedback good'}
+  else {btn.classList.add('wrong');$('quickFeedback').textContent='Belum tepat. Hitung g(3) = 2(3) = 6, kemudian f(6) = 6 + 6 = 12.';$('quickFeedback').className='feedback bad'}
+}));
+
+const guessData=[
+ {q:'Jika f(x) = 2x + 1 dan g(x) = x + 3, maka (f ∘ g)(x) adalah ...',o:['2x + 4','2x + 7','2x + 1','x + 7'],a:1,e:'f(g(x)) = 2(x + 3) + 1 = 2x + 7.'},
+ {q:'Jika f(x) = x² dan g(x) = x − 2, maka (f ∘ g)(x) adalah ...',o:['x² − 2','x² − 4','(x − 2)²','x² + 4'],a:2,e:'f(g(x)) = (x − 2)².'},
+ {q:'Jika f(x) = 3x dan g(x) = x + 4, berapakah (f ∘ g)(2)?',o:['18','14','10','6'],a:0,e:'g(2) = 6, lalu f(6) = 18.'},
+ {q:'Notasi (f ∘ g)(x) sama dengan ...',o:['g(f(x))','f(g(x))','f(x) + g(x)','f(x)g(x)'],a:1,e:'Komposisi f dengan g berarti f(g(x)).'},
+ {q:'Komposisi fungsi pada umumnya ...',o:['selalu komutatif','selalu menghasilkan konstanta','tidak komutatif','tidak bisa dihitung'],a:2,e:'Secara umum f ∘ g tidak sama dengan g ∘ f.'}
+];
+let guessIndex=0,guessScore=0,guessAnswered=false;
+function renderGuess(){
+ const item=guessData[guessIndex];$('guessCounter').textContent=`Soal ${guessIndex+1} dari ${guessData.length}`;$('guessQuestion').textContent=item.q;$('guessOptions').innerHTML='';$('guessFeedback').textContent='';$('guessFeedback').className='feedback';$('guessNext').disabled=true;$('guessProgress').style.width=`${guessIndex/guessData.length*100}%`;guessAnswered=false;
+ item.o.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=String.fromCharCode(65+i)+'. '+opt;b.addEventListener('click',()=>{if(guessAnswered)return;guessAnswered=true;const all=[...$('guessOptions').children];all.forEach((x,j)=>{x.disabled=true;if(j===item.a)x.classList.add('correct')});if(i===item.a){guessScore+=20;$('guessScore').textContent=guessScore;$('guessFeedback').textContent='Tepat! '+item.e;$('guessFeedback').className='feedback good'}else{b.classList.add('wrong');$('guessFeedback').textContent='Belum tepat. '+item.e;$('guessFeedback').className='feedback bad'}$('guessNext').disabled=false;$('guessProgress').style.width=`${(guessIndex+1)/guessData.length*100}%`;});$('guessOptions').appendChild(b)});
+}
+function resetGuess(){guessIndex=0;guessScore=0;$('guessScore').textContent='0';renderGuess()}
+$('guessNext').addEventListener('click',()=>{if(guessIndex<guessData.length-1){guessIndex++;renderGuess()}else{$('guessQuestion').textContent=`Permainan selesai! Skor kamu ${guessScore} dari 100.`;$('guessOptions').innerHTML='';$('guessFeedback').textContent='Kamu dapat mengulang permainan atau mencoba permainan lainnya.';$('guessNext').disabled=true;$('guessProgress').style.width='100%'}});
+$('guessRestart').addEventListener('click',resetGuess);renderGuess();
+
+document.querySelectorAll('.game-tab').forEach(tab=>tab.addEventListener('click',()=>{document.querySelectorAll('.game-tab').forEach(t=>t.classList.toggle('active',t===tab));['tebak','pasangkan','tantangan'].forEach(g=>$('game-'+g).classList.toggle('hidden',g!==tab.dataset.game))}));
+
+const matchPairs=[
+ {left:'f(x) = 2x + 1',right:'f( g(x) ) jika g(x)=x+3',id:0},
+ {left:'g(x) = x²',right:'g(2x) = 4x²',id:1},
+ {left:'f(x) = x − 5',right:'f(14) = 9',id:2},
+ {left:'f(x)=x+2, g(x)=3x',right:'(f ∘ g)(x) = 3x + 2',id:3}
+];
+let chosenLeft=null,matched=new Set();
+function renderMatch(){
+ chosenLeft=null;matched=new Set();$('matchCount').textContent='0';$('matchFeedback').textContent='';const grid=$('matchGrid');grid.innerHTML='';
+ const left=matchPairs.map((p,i)=>({text:p.left,id:i,side:'left'}));
+ const right=matchPairs.map((p,i)=>({text:p.right,id:i,side:'right'})).sort(()=>Math.random()-.5);
+ [...left,...right].forEach(item=>{const b=document.createElement('button');b.className='match-item';b.textContent=item.text;b.dataset.id=item.id;b.dataset.side=item.side;b.addEventListener('click',()=>handleMatch(b));grid.appendChild(b)});
+}
+function handleMatch(btn){
+ if(btn.classList.contains('matched'))return;
+ if(btn.dataset.side==='left'){
+  if(chosenLeft)chosenLeft.classList.remove('chosen');chosenLeft=btn;btn.classList.add('chosen');$('matchFeedback').textContent='Sekarang pilih kartu hasil yang sesuai.';return;
+ }
+ if(!chosenLeft){$('matchFeedback').textContent='Pilih kartu fungsi dari sisi kiri terlebih dahulu.';return}
+ if(chosenLeft.dataset.id===btn.dataset.id){chosenLeft.classList.remove('chosen');chosenLeft.classList.add('matched');btn.classList.add('matched');chosenLeft.disabled=true;btn.disabled=true;matched.add(btn.dataset.id);$('matchCount').textContent=matched.size;$('matchFeedback').textContent=matched.size===4?'Hebat! Semua pasangan tepat.':'Pasangan tepat! Lanjutkan.';$('matchFeedback').className='feedback good';chosenLeft=null}
+ else{$('matchFeedback').textContent='Belum cocok. Periksa kembali proses komposisinya.';$('matchFeedback').className='feedback bad';btn.animate([{transform:'translateX(-3px)'},{transform:'translateX(3px)'},{transform:'translateX(0)'}],{duration:180})}
+}
+$('matchRestart').addEventListener('click',renderMatch);renderMatch();
+
+const challengeBank=[
+ {q:'f(x)=x+4, g(x)=2x. Nilai (f ∘ g)(3) adalah ...',o:['10','14','18','6'],a:0,e:'g(3)=6 lalu f(6)=10.'},
+ {q:'f(x)=2x, g(x)=x−1. (f ∘ g)(x) = ...',o:['2x−2','2x−1','x−2','2x+1'],a:0,e:'f(x−1)=2(x−1)=2x−2.'},
+ {q:'Jika f(x)=x² dan g(x)=3x, maka (f ∘ g)(x) = ...',o:['3x²','x²+3','9x²','6x'],a:2,e:'f(3x)=(3x)²=9x².'},
+ {q:'Jika f(x)=x+5 dan g(x)=2x, nilai (g ∘ f)(1) adalah ...',o:['12','7','2','14'],a:0,e:'f(1)=6 lalu g(6)=12.'},
+ {q:'Untuk (f ∘ g ∘ h)(x), fungsi yang bekerja pertama adalah ...',o:['f','g','h','semua bersamaan'],a:2,e:'Fungsi h berada paling dalam dan bekerja pertama.'},
+ {q:'f(x)=4x−3 dan g(x)=x+2. (f ∘ g)(x) = ...',o:['4x−1','4x+5','4x+2','x+5'],a:1,e:'f(x+2)=4(x+2)−3=4x+5.'}
+];
+let challengeTime=60,challengeScore=0,challengeInterval=null,challengeActive=false,challengeCurrent=null,challengeCount=0;
+function challengeNew(){
+ challengeCurrent=challengeBank[Math.floor(Math.random()*challengeBank.length)];$('challengeQuestion').textContent=challengeCurrent.q;$('challengeOptions').innerHTML='';$('challengeFeedback').textContent='';
+ challengeCurrent.o.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=String.fromCharCode(65+i)+'. '+opt;b.addEventListener('click',()=>{if(!challengeActive||b.disabled)return;[...$('challengeOptions').children].forEach(x=>x.disabled=true);if(i===challengeCurrent.a){challengeScore+=10;$('challengeScore').textContent=challengeScore;$('challengeFeedback').textContent='Benar! '+challengeCurrent.e;$('challengeFeedback').className='feedback good'}else{$('challengeFeedback').textContent='Belum tepat. '+challengeCurrent.e;$('challengeFeedback').className='feedback bad'}challengeCount++;$('challengeProgress').style.width=Math.min(100,challengeCount*10)+'%';setTimeout(()=>{if(challengeActive)challengeNew()},900)});$('challengeOptions').appendChild(b)});
+}
+function resetChallenge(){clearInterval(challengeInterval);challengeActive=false;challengeTime=60;challengeScore=0;challengeCount=0;$('challengeTimer').textContent='60';$('challengeScore').textContent='0';$('challengeQuestion').textContent='Siap menguji kecepatanmu?';$('challengeOptions').innerHTML='';$('challengeFeedback').textContent='';$('challengeProgress').style.width='0%';$('challengeStart').disabled=false}
+$('challengeStart').addEventListener('click',()=>{if(challengeActive)return;challengeActive=true;$('challengeStart').disabled=true;challengeNew();challengeInterval=setInterval(()=>{challengeTime--;$('challengeTimer').textContent=challengeTime;if(challengeTime<=0){clearInterval(challengeInterval);challengeActive=false;$('challengeStart').disabled=false;$('challengeQuestion').textContent=`Waktu habis! Skor akhir: ${challengeScore}.`;$('challengeOptions').innerHTML='';$('challengeFeedback').textContent='Tekan atur ulang jika ingin mencoba lagi.'}},1000)});
+$('challengeReset').addEventListener('click',resetChallenge);
+
+const testData=[
+ {q:'Komposisi fungsi (f ∘ g)(x) didefinisikan sebagai ...',o:['f(x)+g(x)','f(g(x))','g(f(x))','f(x)×g(x)'],a:1,e:'Definisi komposisi adalah (f ∘ g)(x)=f(g(x)).'},
+ {q:'Diketahui f(x)=2x+3 dan g(x)=x−1. Nilai (f ∘ g)(x) adalah ...',o:['2x+2','2x+3','2x+5','x+2'],a:0,e:'f(g(x))=2(x−1)+3=2x+1. Periksa: 2x−2+3=2x+1, sehingga opsi benar seharusnya 2x+1.'},
+ {q:'Jika f(x)=x² dan g(x)=x+2, maka (f ∘ g)(x) adalah ...',o:['x²+2','(x+2)²','x²+4','2x²'],a:1,e:'f(g(x))=(x+2)².'},
+ {q:'Jika f(x)=3x−2 dan g(x)=x+4, maka (f ∘ g)(x) adalah ...',o:['3x+10','3x+2','3x−6','x+10'],a:0,e:'f(x+4)=3(x+4)−2=3x+10.'},
+ {q:'Diketahui f(x)=x+1, g(x)=2x, h(x)=x². Bentuk (f ∘ g ∘ h)(x) adalah ...',o:['2x²+1','(2x+1)²','x²+3','2x+1'],a:0,e:'h(x)=x², g(h(x))=2x², lalu f(2x²)=2x²+1.'},
+ {q:'Jika f(x)=2x+1 dan g(x)=x², nilai (f ∘ g)(2) adalah ...',o:['5','8','9','10'],a:2,e:'g(2)=4 lalu f(4)=9.'},
+ {q:'Pernyataan yang benar secara umum tentang komposisi fungsi adalah ...',o:['f∘g selalu sama dengan g∘f','komposisi selalu komutatif','f∘g pada umumnya tidak sama dengan g∘f','komposisi tidak bisa melibatkan tiga fungsi'],a:2,e:'Urutan fungsi umumnya memengaruhi hasil komposisi.'},
+ {q:'Jika f(x)=x−5 dan g(x)=3x+2, nilai (f ∘ g)(4) adalah ...',o:['9','14','11','19'],a:0,e:'g(4)=14, lalu f(14)=9.'},
+ {q:'Harga awal x mendapat diskon 10%, lalu dikenai biaya tetap Rp5.000. Fungsi akhir yang sesuai adalah ...',o:['0,9x−5.000','0,1x+5.000','0,9x+5.000','x+5.000'],a:2,e:'Diskon menghasilkan 0,9x, kemudian biaya tetap ditambahkan.'},
+ {q:'Diketahui f(x)=5x dan g(x)=x−4. Proses mengalikan x dengan 5 lalu mengurangi 4 dinyatakan sebagai ...',o:['(f∘g)(x)','(g∘f)(x)','f(x)+g(x)','(f∘f)(x)'],a:1,e:'f bekerja lebih dahulu, lalu g, sehingga komposisinya g∘f.'}
+];
+// Correct test item 2 and ensure all answer options contain correct answer.
+testData[1].o=['2x+1','2x+2','2x+3','x+2'];testData[1].a=0;testData[1].e='f(g(x))=2(x−1)+3=2x+1.';
+let testAnswers={};let testSubmitted=false;
+function renderTest(){
+ const root=$('testQuestions');root.innerHTML='';testAnswers={};testSubmitted=false;$('testResult').classList.add('hidden');$('testReview').classList.add('hidden');$('testWarning').textContent='';$('answeredCount').textContent='0';$('testProgress').style.width='0%';
+ testData.forEach((item,idx)=>{const wrap=document.createElement('article');wrap.className='question';wrap.id='test-q-'+idx;const p=document.createElement('p');p.textContent=`${idx+1}. ${item.q}`;wrap.appendChild(p);const opts=document.createElement('div');opts.className='options';item.o.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=String.fromCharCode(65+i)+'. '+opt;b.addEventListener('click',()=>{if(testSubmitted)return;testAnswers[idx]=i;opts.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');updateTestProgress()});opts.appendChild(b)});wrap.appendChild(opts);root.appendChild(wrap)});
+}
+function updateTestProgress(){const n=Object.keys(testAnswers).length;$('answeredCount').textContent=n;$('testProgress').style.width=(n/testData.length*100)+'%'}
+$('submitTest').addEventListener('click',()=>{
+ const missing=testData.length-Object.keys(testAnswers).length;
+ if(missing>0){$('testWarning').textContent=`Masih ada ${missing} soal yang belum dijawab. Lengkapi terlebih dahulu atau pilih “Selesaikan Tes” lagi setelah meninjau soal.`;$('testWarning').className='feedback bad';return}
+ testSubmitted=true;let score=0;const review=$('testReview');review.innerHTML='<h3>Pembahasan dan tinjauan jawaban</h3>';
+ testData.forEach((item,idx)=>{const correct=testAnswers[idx]===item.a;if(correct)score+=10;const q=$('test-q-'+idx);[...q.querySelectorAll('.option')].forEach((b,i)=>{b.disabled=true;if(i===item.a)b.classList.add('correct');else if(i===testAnswers[idx]&&!correct)b.classList.add('wrong')});const p=document.createElement('p');p.innerHTML=`<strong>Soal ${idx+1}: ${correct?'Benar':'Belum tepat'}.</strong> ${item.e}`;p.className=correct?'feedback good':'feedback bad';review.appendChild(p)});
+ const result=$('testResult');result.classList.remove('hidden');result.innerHTML=`<div>HASIL TES AKHIR</div><div class="big-score">${score}/100</div><h3>${score>=80?'Hebat! Pemahamanmu sudah kuat.':score>=60?'Cukup baik, terus berlatih!':'Jangan menyerah, pelajari kembali materi.'}</h3><p>Jawaban benar: ${score/10} dari 10 soal · Jawaban salah: ${10-score/10} soal.</p><p>${score>=80?'Pertahankan pemahaman dan coba jelaskan konsep kepada teman.': 'Tinjau pembahasan di bawah, lalu kunjungi kembali materi yang masih membingungkan.'}</p>`;
+ review.classList.remove('hidden');$('testWarning').textContent='Tes selesai. Baca pembahasan setiap soal untuk memperkuat pemahaman.';$('testWarning').className='feedback good';localStorage.setItem('komposisiNilaiTerakhir',String(score));
+});
+$('resetTest').addEventListener('click',()=>{renderTest();$('testQuestions').scrollIntoView({behavior:'smooth',block:'start'})});renderTest();
+
+$('saveProgress').addEventListener('click',()=>{const note='RINGKASAN KOMPOSISI FUNGSI\\n(f ∘ g)(x) = f(g(x))\\n(g ∘ f)(x) = g(f(x))\\n(f ∘ g ∘ h)(x) = f(g(h(x)))\\nLangkah: kerjakan fungsi paling dalam, substitusikan ke fungsi berikutnya, lalu sederhanakan. Komposisi pada umumnya tidak komutatif.';const blob=new Blob([note],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ringkasan-komposisi-fungsi.txt';a.click();URL.revokeObjectURL(url);$('saveMessage').textContent='Ringkasan berhasil disiapkan sebagai file teks.'});
+</script>
+</body>
+</html>
